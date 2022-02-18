@@ -1,0 +1,149 @@
+html {
+    width: auto;
+    margin: 0;
+}
+
+body {
+    width: auto;
+    margin: 0;
+}
+
+/* ----- HEADER ----- */
+
+header {
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid #d3d3d3;
+    background-color: #f2f2f2;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+/* ----- HEADER RESPONSIVE ----- */
+
+@media screen and (max-width: 768px) {
+    header {
+        width: 100%;
+        height: 150px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+    }
+    
+    header a {
+        text-decoration: none;
+        color: black;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+  }
+
+/* ----- MAIN ----- */
+
+main {
+    width: 60%;
+    margin: auto;
+}
+
+figure {
+    display: flex;
+    border : 1px solid #d3d3d3;
+    padding: 10px;
+}
+
+figure img {
+    width: 200px;
+    height: auto;
+    
+}
+figcaption {
+    padding: 10px;
+    width: 100%;
+}
+  
+figcaption div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.actualites {
+    border : 1px solid #d3d3d3;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.actualites_link {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        width: 90%;
+        margin: auto;
+    }
+    
+    figure {
+        display: flex;
+        flex-direction: column;
+        border : 1px solid #d3d3d3;
+        padding: 10px;
+    }
+    
+    figure img {
+        width: 90%;
+        height: auto;
+        margin: auto;        
+    }
+    figcaption {
+        padding: 10px;
+        width: 100%;
+    }
+      
+    figcaption div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .actualites {
+        border : 1px solid #d3d3d3;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .actualites_link {
+        display: flex;
+        justify-content: flex-end;
+    }
+  }
+
+/* ----- FOOTER ----- */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #d3d3d3;
+    background-color: #f2f2f2;
+}
+  
