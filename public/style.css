@@ -1,16 +1,39 @@
 html {
-    width: auto;
-    margin: 0;
+  width: auto;
+  margin: 0;
+  background-color: #232323;
+  color: white;
 }
 
 body {
-    width: auto;
-    margin: 0;
+  width: auto;
+  margin: 0;
 }
 
 /* ----- HEADER ----- */
 
 header {
+  width: 100%;
+  height: 150px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border-bottom: 1px solid #d3d3d3; */
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+/* ----- HEADER RESPONSIVE ----- */
+
+@media screen and (max-width: 768px) {
+  header {
     width: 100%;
     height: 150px;
     margin: 0;
@@ -18,132 +41,220 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-bottom: 1px solid #d3d3d3;
-    background-color: #f2f2f2;
-}
-
-header a {
-    text-decoration: none;
-    color: black;
-    margin-right: 50px;
-    margin-left: 50px;
-}
-
-/* ----- HEADER RESPONSIVE ----- */
-
-@media screen and (max-width: 768px) {
-    header {
-        width: 100%;
-        height: 150px;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        width: 70%;
-    }
-    
-    header a {
-        text-decoration: none;
-        color: black;
-        margin-right: 0px;
-        margin-left: 0px;
-    }
   }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+  }
+
+  header a {
+    text-decoration: none;
+    color: white;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
 
 /* ----- MAIN ----- */
 
 main {
-    width: 60%;
-    margin: auto;
+  width: 60%;
+  margin: auto;
+}
+
+article {
+  background-color: #2e2e2e;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 1px;
+}
+
+.indexFilms {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.filmsFilms {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 figure {
-    display: flex;
-    border : 1px solid #d3d3d3;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: auto;
 }
 
 figure img {
-    width: 200px;
-    height: auto;
-    
+  width: 100%;
+  height: 500px;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+  position: relative;
 }
+
 figcaption {
-    padding: 10px;
-    width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2e2e2e;
+  /* outline: 1px solid white;
+  outline-offset: -1px;*/
+  border-radius: 0px 0px 10px 10px;
+  padding-bottom: 20px;
 }
-  
-figcaption div {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+
+figcaption button {
+  background-color: #5f42e7;
+  border: none;
+  color: white;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+}
+
+.indexActualite {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.actualiteActualite {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .actualites {
-    border : 1px solid #d3d3d3;
-    padding: 10px;
-    margin-bottom: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 300px;
+  background-color: #2e2e2e;
+  border-radius: 10px;
 }
 
 .actualites_link {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  color: white;
+}
+
+.actualites a {
+  text-decoration: none;
+  background-color: #5f42e7;
+  border: none;
+  color: white;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preinscriptionFilmFigure {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    width: 100%;
+}
+
+.preinscriptionFilmFigureImage {
+    object-fit: contain;
+}
+
+.preinscriptionFilmFigcaption {
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+form {
+    width: 30%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+form #name {
+    background-color: #2e2e2e;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 30px;
+}
+
+form #mail {
+    background-color: #2e2e2e;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 30px;
+}
+
+form #numberPerson {
+    background-color: #2e2e2e;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 30px;
 }
 
 @media screen and (max-width: 768px) {
-    main {
-        width: 90%;
-        margin: auto;
-    }
-    
-    figure {
-        display: flex;
-        flex-direction: column;
-        border : 1px solid #d3d3d3;
-        padding: 10px;
-    }
-    
-    figure img {
-        width: 90%;
-        height: auto;
-        margin: auto;        
-    }
-    figcaption {
-        padding: 10px;
-        width: 100%;
-    }
-      
-    figcaption div {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .actualites {
-        border : 1px solid #d3d3d3;
-        padding: 10px;
-        margin-bottom: 20px;
-    }
-    
-    .actualites_link {
-        display: flex;
-        justify-content: flex-end;
-    }
+  main {
+    width: 90%;
+    margin: auto;
   }
+
+  .indexFilms {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .indexActualite {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .actualites {
+    border: 1px solid #d3d3d3;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .actualites_link {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
 
 /* ----- FOOTER ----- */
 
 footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-top: 1px solid #d3d3d3;
-    background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-  
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
